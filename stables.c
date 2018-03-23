@@ -1,11 +1,11 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-typedef struct 			s_unrolled {
+typedef struct 				s_unrolled {
 	struct s_unrolled*	next;
-	unsigned			count;
-	int				values[8];
-} 						t_unrolled;
+	unsigned						count;
+	int									values[8];
+} 										t_unrolled;
 
 t_unrolled* new_unrolled(void) {
 	t_unrolled*	new = malloc(sizeof(t_unrolled));
